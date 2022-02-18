@@ -66,3 +66,7 @@ Some components need to be modified to work properly with Turbolinks. Import the
 ### Datatable
 
 The original implementation does not return the HTML to its initial state when the Datatable is disposed. This is fixed here.
+
+### Sidenav
+
+The active link keeps its highlight when clicking the back button. This results in multiple links being highlighted at the same time. This is fixed here.

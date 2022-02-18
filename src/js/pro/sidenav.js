@@ -230,6 +230,10 @@ class Sidenav {
   }
 
   dispose() {
+    if (this._activeNode) {
+      this._activeNode.classList.remove('active');
+    }
+
     if (this._backdrop) {
       this._removeBackdrop();
     }
