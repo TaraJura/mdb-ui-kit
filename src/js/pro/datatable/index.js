@@ -129,6 +129,8 @@ class Datatable {
   constructor(element, data = {}, options = {}) {
     this._element = element;
 
+    this._originalHTML = this._element.innerHTML;
+
     this._options = this._getOptions(options);
 
     this._sortField = this._options.sortField;
@@ -310,6 +312,8 @@ class Datatable {
 
     this._perfectScrollbar.destroy();
 
+    this._element.innerHTML = this._originalHTML;
+
     this._element = null;
   }
 
@@ -484,6 +488,8 @@ class Datatable {
   }
 
   _setup() {
+    this.originalHTML = this._element.innerHTML;
+
     this._setClassNames();
 
     this._renderTable();
