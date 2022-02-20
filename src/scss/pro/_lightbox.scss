@@ -42,26 +42,26 @@
         color: $lightbox-gallery-toolbar-button-hover-color;
       }
       &:before {
-        font-family: 'Font Awesome 5 Free';
+        font-family: 'Material Icons';
         font-weight: $lightbox-gallery-toolbar-button-before-font-weight;
       }
       &.fontawesome-pro:before {
-        font-family: 'Font Awesome 5 Pro';
+        font-family: 'Material Icons';
       }
       &.lightbox-gallery-fullscreen-btn:before {
-        content: '\f065';
+        content: '\e5d0';
       }
       &.lightbox-gallery-fullscreen-btn.active:before {
-        content: '\f066';
+        content: '\e5d1';
       }
       &.lightbox-gallery-zoom-btn:before {
-        content: '\f00e';
+        content: '\e8ff';
       }
       &.lightbox-gallery-zoom-btn.active:before {
-        content: '\f010';
+        content: '\e900';
       }
       &.lightbox-gallery-close-btn:before {
-        content: '\f00d';
+        content: '\e5cd';
       }
     }
   }
@@ -132,12 +132,12 @@
         color: $lightbox-gallery-arrow-right-button-hover-color;
       }
       &:before {
-        font-family: 'Font Awesome 5 Free';
+        font-family: 'Material Icons';
         font-weight: $lightbox-gallery-arrow-right-button-before-font-weight;
-        content: '\f061';
+        content: '\e5c8';
       }
       &.fontawesome-pro:before {
-        font-family: 'Font Awesome 5 Pro';
+        font-family: 'Material Icons';
       }
     }
   }
@@ -162,12 +162,12 @@
         color: $lightbox-gallery-arrow-left-button-hover-color;
       }
       &:before {
-        font-family: 'Font Awesome 5 Free';
+        font-family: 'Material Icons';
         font-weight: $lightbox-gallery-arrow-left-button-before-font-weight;
-        content: '\f060';
+        content: '\e5c4';
       }
       &.fontawesome-pro:before {
-        font-family: 'Font Awesome 5 Pro';
+        font-family: 'Material Icons';
       }
     }
   }
