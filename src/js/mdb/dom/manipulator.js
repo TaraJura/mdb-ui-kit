@@ -5,7 +5,7 @@
  * --------------------------------------------------------------------------
  */
 
-function normalizeData(val) {
+ function normalizeData(val) {
   if (val === 'true') {
     return true;
   }
@@ -18,8 +18,12 @@ function normalizeData(val) {
     return Number(val);
   }
 
-  if (val === '' || val === 'null') {
+  if (val === '' || val === 'null' || val === null) {
     return null;
+  }
+
+  if (val[0] === '[' || val[0] === '{') { 
+    return JSON.parse(val) 
   }
 
   return val;

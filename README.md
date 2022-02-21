@@ -75,3 +75,9 @@ The active link keeps its highlight when clicking the back button. This results 
 
 Icon font changed to `Material Icons` due to incompatible Font Awesome versions. MDB used 6, Lightbox used 5. Version 6 is loaded as 'svg', version 5 use 'pseudo class :before'.
 Material Icons needs to be added to your project: eg. `material-design-icons-iconfont": "^6.1.0"`
+
+### Manipulator.js
+
+`mdb-ui-kit/src/js/mdb/dom/manipulator.js`
+
+Add Array parse for `mdb-data-attribute=[Array]`
