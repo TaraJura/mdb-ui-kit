@@ -81,3 +81,7 @@ Material Icons needs to be added to your project: eg. `material-design-icons-ico
 `mdb-ui-kit/src/js/mdb/dom/manipulator.js`
 
 Add Array parse for `mdb-data-attribute=[Array]`
+
+### Chips
+
+By default, a chip is added when the input is blurred. This breaks autocomplete, so the feature has been removed and it is only possible to add a chip by pressing Enter.

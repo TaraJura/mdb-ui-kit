@@ -390,10 +390,6 @@ class ChipsInput extends Chip {
   }
 
   _handleBlurInput = ({ target }) => {
-    if (target.value.length > 0) {
-      this._handleCreateChip(target, target.value);
-    }
-
     if (this.allChips.length > 0) {
       Manipulator.addClass(target, CLASSNAME_ACTIVE);
       Manipulator.addClass(this.chipsInputWrapper, CLASSNAME_CHIPS_PADDING);
