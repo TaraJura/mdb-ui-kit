@@ -60,6 +60,7 @@ class Range {
 
   dispose() {
     this._disposeEvents();
+    this._disposeThumb();
     Data.removeData(this._element, DATA_KEY);
     this._element = null;
   }
@@ -70,6 +71,11 @@ class Range {
     Manipulator.addClass(RANGE_THUMB, CLASSNAME_THUMB);
     RANGE_THUMB.innerHTML = '<span class="thumb-value"></span>';
     this._element.append(RANGE_THUMB);
+  }
+
+  _disposeThumb() {
+    const thumb = SelectorEngine.findOne(`.${CLASSNAME_THUMB}`, this._element);
+    thumb.remove();
   }
 
   _updateValue() {

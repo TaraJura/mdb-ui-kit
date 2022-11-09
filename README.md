@@ -85,3 +85,7 @@ Add Array parse for `mdb-data-attribute=[Array]`
 ### Chips
 
 By default, a chip is added when the input is blurred. This breaks autocomplete, so the feature has been removed and it is only possible to add a chip by pressing Enter.
+
+### Range
+
+Range did not originally remove the thumb element when disposed.
